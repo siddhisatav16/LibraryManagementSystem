@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - LibraryOS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="blob-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Top Navbar for Auth Pages -->
+    <nav class="top-navbar nav-fixed-full">
+        <div class="nav-container container">
+            <a href="welcome.html" class="nav-logo">
+                <i class="fas fa-layer-group"></i> LibraryOS
+            </a>
+            <div class="nav-links">
+                <a href="welcome.html" class="nav-link">Home</a>
+                <a href="register.html" class="nav-link">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="auth-container">
+        <div class="lib-card auth-card">
+            
+            <div class="auth-banner">
+                <h2>Welcome Back</h2>
+            </div>
+            
+            <div class="auth-form-wrapper">
+                <div class="form-centered-500">
+                    <p class="text-muted text-center mb-2">Sign in to manage your library</p>
+                    
+                    <form action="LoginServlet" method="post">
+                        <div id="alert-container"></div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" class="lib-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password *</label>
+                            <input type="password" id="password" name="password" class="lib-input" required>
+                        </div>
+                        <button type="submit" class="lib-btn lib-btn-primary w-full">
+                            Sign In
+                        </button>
+                    </form>
+                    
+                    <div class="text-center mt-2">
+                        <p class="text-muted">
+                            Don't have an account? 
+                            <a href="register.html" class="link-primary font-bold">Create one</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issued Books - LibraryOS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="blob-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Top Navbar -->
+    <nav class="top-navbar">
+        <div class="nav-container container">
+            <a href="dashboard.html" class="nav-logo">
+                <i class="fas fa-layer-group"></i> LibraryOS
+            </a>
+            <div class="nav-links" id="navLinks">
+                <!-- Links will be injected by script.js -->
+            </div>
+        </div>
+    </nav>
+
+    <div id="detailModal" class="lib-card" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; width: 90%; max-width: 600px; padding: 2.5rem;">
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <div class="stat-orb" style="margin: 0 auto 1.5rem auto; background: linear-gradient(to bottom right, #FBBF24, #F59E0B);">
+                <i class="fas fa-info-circle"></i>
+            </div>
+            <h2 class="text-section" id="modalTitle">Issue Details</h2>
+        </div>
+        <div id="modalContent"></div>
+        <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+            <button onclick="closeModal()" class="lib-btn lib-btn-secondary" style="flex: 1;">Close</button>
+            <div id="modalActions" style="flex: 1;"></div>
+        </div>
+    </div>
+    <div id="modalOverlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); backdrop-filter: blur(4px); z-index: 999;" onclick="closeModal()"></div>
+
+    <div class="container" style="margin-top: 4rem; margin-bottom: 4rem;">
+        <div class="lib-card">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                <h3 class="text-card-title"><i class="fas fa-exchange-alt" style="color: var(--warning);"></i> Issued Books History</h3>
+            </div>
+
+            <div class="lib-table-container">
+                <table class="lib-table">
+                    <thead>
+                        <tr>
+                            <th>Book Info</th>
+                            <th>User Name</th>
+                            <th>Dates</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="issuedTableBody">
+                        <tr><td colspan="5" style="text-align: center; padding: 3rem; color: var(--text-muted);"><i class="fas fa-spinner fa-spin"></i> Loading Records...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
