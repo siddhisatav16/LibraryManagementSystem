@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - LibraryOS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>localStorage.setItem('userRole', 'admin');</script>
+</head>
+<body>
+    <div class="blob-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Top Navbar -->
+    <nav class="top-navbar">
+        <div class="nav-container container">
+            <a href="dashboard.html" class="nav-logo">
+                <i class="fas fa-layer-group"></i> LibraryOS
+            </a>
+            <div class="nav-links">
+                <a href="dashboard.html" class="nav-link active"><i class="fas fa-home"></i> Dashboard</a>
+                <a href="bookadd.html" class="nav-link"><i class="fas fa-book"></i> Books</a>
+                <a href="memberadd.html" class="nav-link"><i class="fas fa-users"></i> Members</a>
+                <a href="issuedbooklist.html" class="nav-link"><i class="fas fa-exchange-alt"></i> Issued Books</a>
+                <a href="settings" class="nav-link"><i class="fas fa-cog"></i> Settings</a>
+                <a href="LogoutServlet" class="lib-btn lib-btn-secondary nav-logout">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content container">
+
+        <!-- TOP HEADER -->
+        <header class="dashboard-header">
+            <div class="welcome">
+                <h1 class="text-section welcome-title">Welcome Back, Admin</h1>
+                <p class="text-muted text-card-title">Here's what's happening in your library today</p>
+            </div>
+        </header>
+
+        <!-- STATS CARDS -->
+        <div class="stats-grid">
+            <div class="lib-card">
+                <div class="stat-orb orb-yellow">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h3 id="totalBooks" class="stat-value">—</h3>
+                <p class="stat-label">Total Books</p>
+            </div>
+            <div class="lib-card">
+                <div class="stat-orb orb-green">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3 id="totalMembers" class="stat-value">—</h3>
+                <p class="stat-label">Total Members</p>
+            </div>
+            <div class="lib-card">
+                <div class="stat-orb orb-orange">
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+                <h3 id="issuedBooks" class="stat-value">—</h3>
+                <p class="stat-label">Books Issued</p>
+            </div>
+            <div class="lib-card">
+                <div class="stat-orb orb-red">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <h3 id="overdueBooks" class="stat-value">—</h3>
+                <p class="stat-label">Overdue</p>
+            </div>
+        </div>
+
+        <!-- QUICK ACTIONS -->
+        <div class="quick-actions">
+            <h3 class="text-card-title mb-1"><i class="fas fa-bolt"></i> Quick Actions</h3>
+            <div class="grid-bento">
+                <a href="bookadd.html" class="lib-btn lib-btn-secondary"><i class="fas fa-plus"></i> Add Book</a>
+                <a href="memberadd.html" class="lib-btn lib-btn-secondary"><i class="fas fa-user-plus"></i> Add Member</a>
+                <a href="booklist.html" class="lib-btn lib-btn-secondary"><i class="fas fa-list"></i> View Books</a>
+                <a href="memberlist.html" class="lib-btn lib-btn-secondary"><i class="fas fa-users"></i> View Members</a>
+                <a href="settings" class="lib-btn lib-btn-secondary"><i class="fas fa-cog"></i> Global Settings</a>
+            </div>
+        </div>
+
+        <!-- TWO COLUMN LAYOUT -->
+        <div class="grid-bento mb-4">
+
+            <!-- RECENT ACTIVITY -->
+            <div class="lib-card">
+                <div class="flex-between mb-2">
+                    <h3 class="text-card-title"><i class="fas fa-history"></i> Recent Activity</h3>
+                </div>
+                <div id="activityList" class="flex-column gap-1">
+                    <div class="text-muted"><i class="fas fa-spinner fa-spin"></i> Loading...</div>
+                </div>
+            </div>
+
+            <!-- OVERDUE BOOKS -->
+            <div class="lib-card">
+                <div class="flex-between mb-2">
+                    <h3 class="text-card-title"><i class="fas fa-clock"></i> Overdue Books</h3>
+                    <a href="issuedbooklist.html" class="link-primary">View All</a>
+                </div>
+                <div id="overdueList" class="flex-column gap-1">
+                    <div class="text-muted"><i class="fas fa-spinner fa-spin"></i> Loading...</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- RECENTLY ADDED BOOKS TABLE -->
+        <div class="lib-card mb-4">
+            <div class="flex-between mb-2">
+                <h3 class="text-card-title"><i class="fas fa-book"></i> Recently Added Books</h3>
+                <a href="booklist.html" class="link-primary">View All</a>
+            </div>
+            <div class="lib-table-container">
+                <table class="lib-table">
+                    <thead>
+                        <tr>
+                            <th>Book ID</th>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Category</th>
+                            <th>Stock</th>
+                        </tr>
+                    </thead>
+                    <tbody id="recentBooksTable">
+                        <tr><td colspan="5" class="text-center">Loading…</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
