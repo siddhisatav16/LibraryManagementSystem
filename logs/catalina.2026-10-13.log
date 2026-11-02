@@ -1,0 +1,278 @@
+13-Oct-2026 13:14:02.024 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.61
+13-Oct-2026 13:14:02.026 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 6 2026 22:56:25 UTC
+13-Oct-2026 13:14:02.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.61.0
+13-Oct-2026 13:14:02.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+13-Oct-2026 13:14:02.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            26.0
+13-Oct-2026 13:14:02.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+13-Oct-2026 13:14:02.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-26.jdk/Contents/Home
+13-Oct-2026 13:14:02.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           26+35-2893
+13-Oct-2026 13:14:02.027 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+13-Oct-2026 13:14:02.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61
+13-Oct-2026 13:14:02.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61
+13-Oct-2026 13:14:02.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/conf/logging.properties
+13-Oct-2026 13:14:02.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+13-Oct-2026 13:14:02.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+13-Oct-2026 13:14:02.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+13-Oct-2026 13:14:02.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+13-Oct-2026 13:14:02.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+13-Oct-2026 13:14:02.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+13-Oct-2026 13:14:02.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+13-Oct-2026 13:14:02.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+13-Oct-2026 13:14:02.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+13-Oct-2026 13:14:02.086 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+13-Oct-2026 13:14:02.087 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+13-Oct-2026 13:14:02.087 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61
+13-Oct-2026 13:14:02.087 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61
+13-Oct-2026 13:14:02.087 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/temp
+13-Oct-2026 13:14:02.098 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/vedantsuryawanshi/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+13-Oct-2026 13:14:02.363 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+13-Oct-2026 13:14:02.408 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [527] milliseconds
+13-Oct-2026 13:14:02.441 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+13-Oct-2026 13:14:02.441 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.61]
+13-Oct-2026 13:14:02.468 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/ROOT.war]
+13-Oct-2026 13:14:03.126 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Oct-2026 13:14:03.168 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/ROOT.war] has finished in [697] ms
+13-Oct-2026 13:14:03.169 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/docs]
+13-Oct-2026 13:14:03.191 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/docs] has finished in [22] ms
+13-Oct-2026 13:14:03.191 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/manager]
+13-Oct-2026 13:14:03.220 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/manager] has finished in [29] ms
+13-Oct-2026 13:14:03.220 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/examples]
+13-Oct-2026 13:14:03.414 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/examples] has finished in [194] ms
+13-Oct-2026 13:14:03.415 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/host-manager]
+13-Oct-2026 13:14:03.444 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/host-manager] has finished in [29] ms
+13-Oct-2026 13:14:03.449 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+13-Oct-2026 13:14:03.463 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1053] milliseconds
+13-Oct-2026 13:15:50.879 INFO [http-nio-8080-exec-7] org.apache.tomcat.util.http.parser.Cookie.logInvalidHeader A cookie header was received [save 0={"component7":{"type":"OR","x":4429.136384671224,"y":4195.7272826189055,"rotation":0,"inputs":{"input1":{"state":0,"from":[{"component":"component8","pin":"output1"}]},"input2":{"state":0,"from":[{"component":"component8","pin":"output1"}]}},"outputs":{"output1":{"state":0,"to":[{"component":"component12","pin":"input1"}]}}},"component8":{"type":"NAND","x":4367.5,"y":4009,"rotation":0,"inputs":{"input1":{"state":1,"from":[{"component":"component9","pin":"output"}]},"input2":{"state":1,"from":[{"component":"component9","pin":"output"}]}},"outputs":{"output1":{"state":0,"to":[{"component":"component7","pin":"input2"},{"component":"component7","pin":"input1"}]}}},"component9":{"type":"SWITCH","x":4188.571420944449,"y":4008.571427225491,"rotation":0,"inputs":{},"outputs":{"output":{"state":1,"to":[{"component":"component8","pin":"input1"},{"component":"component8","pin":"input2"}]}}},"component12":{"type":"NOT","x":4508.166666666666,"y":3975.6666666666665,"rotation":0,"inputs":{"input1":{"state":0,"from":[{"component":"component7","pin":"output1"}]}},"outputs":{"output1":{"state":1,"to":[{"component":"component13","pin":"input"}]}}},"component13":{"type":"LIGHT","x":4654.545484947085,"y":3954.545453859096,"rotation":0,"inputs":{"input":{"state":1,"from":[{"component":"component12","pin":"output1"}]}},"outputs":{}}}] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+13-Oct-2026 15:13:33.306 INFO [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess Reloading memory user database [UserDatabase] from updated source [file:/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/conf/tomcat-users.xml]
+13-Oct-2026 15:13:33.310 SEVERE [Catalina-utility-2] org.apache.catalina.users.MemoryUserDatabase.open The specified user database [conf/tomcat-users.xml] could not be found
+13-Oct-2026 15:13:33.311 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context []
+13-Oct-2026 15:13:33.343 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc JDBC driver de-registration failed for web application [ROOT]
+	java.lang.IllegalStateException: Failed to obtain an entry from the archive [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar]
+		at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.getArchiveEntry(AbstractSingleArchiveResourceSet.java:113)
+		at org.apache.catalina.webresources.AbstractArchiveResourceSet.getResource(AbstractArchiveResourceSet.java:299)
+		at org.apache.catalina.webresources.StandardRoot.getResourceInternal(StandardRoot.java:298)
+		at org.apache.catalina.webresources.Cache.getResource(Cache.java:83)
+		at org.apache.catalina.webresources.StandardRoot.getResource(StandardRoot.java:230)
+		at org.apache.catalina.webresources.StandardRoot.getClassLoaderResource(StandardRoot.java:239)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:1176)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc(WebappClassLoaderBase.java:1764)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1709)
+		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
+		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:393)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:241)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:4941)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:241)
+		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:676)
+		at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1507)
+		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1436)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1688)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:320)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:115)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:989)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1212)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1216)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1189)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:371)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:80)
+		at java.base/java.lang.Thread.run(Thread.java:1516)
+	Caused by: java.nio.file.NoSuchFileException: /Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.6.0.jar
+		at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+		at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:108)
+		at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:113)
+		at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:57)
+		at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:162)
+		at java.base/java.nio.file.Files.readAttributes(Files.java:1706)
+		at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1505)
+		at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:705)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:204)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:150)
+		at java.base/java.util.jar.JarFile.<init>(JarFile.java:335)
+		at org.apache.catalina.webresources.AbstractArchiveResourceSet.openJarFile(AbstractArchiveResourceSet.java:382)
+		at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.getArchiveEntry(AbstractSingleArchiveResourceSet.java:108)
+		... 30 more
+13-Oct-2026 15:13:33.349 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread: 
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:391)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:123)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:201)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+ java.base/java.lang.Thread.run(Thread.java:1516)
+13-Oct-2026 15:13:33.424 INFO [mysql-cj-abandoned-connection-cleanup] org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+	java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load []. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+		at org.apache.catalina.loader.WebappClassLoaderBase.checkStateForResourceLoading(WebappClassLoaderBase.java:1500)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1067)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+		at com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+		at java.base/java.lang.Thread.run(Thread.java:1516)
+13-Oct-2026 15:13:33.875 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/examples]
+13-Oct-2026 15:13:33.884 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc JDBC driver de-registration failed for web application [examples]
+	java.lang.IllegalStateException: Failed to obtain an entry from the archive [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/examples/WEB-INF/lib/taglibs-standard-spec-1.2.5-migrated-0.0.1.jar]
+		at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.getArchiveEntry(AbstractSingleArchiveResourceSet.java:113)
+		at org.apache.catalina.webresources.AbstractArchiveResourceSet.getResource(AbstractArchiveResourceSet.java:299)
+		at org.apache.catalina.webresources.StandardRoot.getResourceInternal(StandardRoot.java:298)
+		at org.apache.catalina.webresources.Cache.getResource(Cache.java:83)
+		at org.apache.catalina.webresources.StandardRoot.getResource(StandardRoot.java:230)
+		at org.apache.catalina.webresources.StandardRoot.getClassLoaderResource(StandardRoot.java:239)
+		at org.apache.catalina.loader.WebappClassLoaderBase.getResourceAsStream(WebappClassLoaderBase.java:1176)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc(WebappClassLoaderBase.java:1764)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1709)
+		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
+		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:393)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:241)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:4941)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:241)
+		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:676)
+		at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1507)
+		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1436)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1688)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:320)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:115)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:989)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1212)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1216)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1189)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:371)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:80)
+		at java.base/java.lang.Thread.run(Thread.java:1516)
+	Caused by: java.nio.file.NoSuchFileException: /Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/examples/WEB-INF/lib/taglibs-standard-spec-1.2.5-migrated-0.0.1.jar
+		at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+		at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:108)
+		at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:113)
+		at java.base/sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:57)
+		at java.base/sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:162)
+		at java.base/java.nio.file.Files.readAttributes(Files.java:1706)
+		at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1505)
+		at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:705)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:204)
+		at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:150)
+		at java.base/java.util.jar.JarFile.<init>(JarFile.java:335)
+		at org.apache.catalina.webresources.AbstractArchiveResourceSet.openJarFile(AbstractArchiveResourceSet.java:382)
+		at org.apache.catalina.webresources.AbstractSingleArchiveResourceSet.getArchiveEntry(AbstractSingleArchiveResourceSet.java:108)
+		... 30 more
+13-Oct-2026 15:13:34.395 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/host-manager]
+13-Oct-2026 15:13:34.396 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc JDBC driver de-registration failed for web application [host-manager]
+	java.io.FileNotFoundException: org/apache/catalina/loader/JdbcLeakPrevention.class
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc(WebappClassLoaderBase.java:1766)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1709)
+		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
+		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:393)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:241)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:4941)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:241)
+		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:676)
+		at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1507)
+		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1436)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1688)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:320)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:115)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:989)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1212)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1216)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1189)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:371)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:80)
+		at java.base/java.lang.Thread.run(Thread.java:1516)
+13-Oct-2026 15:13:34.905 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/manager]
+13-Oct-2026 15:13:34.909 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc JDBC driver de-registration failed for web application [manager]
+	java.io.FileNotFoundException: org/apache/catalina/loader/JdbcLeakPrevention.class
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc(WebappClassLoaderBase.java:1766)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1709)
+		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
+		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:393)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:241)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:4941)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:241)
+		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:676)
+		at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1507)
+		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1436)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1688)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:320)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:115)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:989)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1212)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1216)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1189)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:371)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:80)
+		at java.base/java.lang.Thread.run(Thread.java:1516)
+13-Oct-2026 15:13:35.419 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/docs]
+13-Oct-2026 15:13:35.423 WARNING [Catalina-utility-2] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc JDBC driver de-registration failed for web application [docs]
+	java.io.FileNotFoundException: org/apache/catalina/loader/JdbcLeakPrevention.class
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc(WebappClassLoaderBase.java:1766)
+		at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1709)
+		at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1634)
+		at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:393)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:241)
+		at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:4941)
+		at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:241)
+		at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:676)
+		at org.apache.catalina.startup.HostConfig.undeploy(HostConfig.java:1507)
+		at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1436)
+		at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1688)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:320)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:115)
+		at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:989)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1212)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1216)
+		at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1189)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:371)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:310)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:80)
+		at java.base/java.lang.Thread.run(Thread.java:1516)
+13-Oct-2026 15:32:02.005 INFO [Catalina-utility-1] org.apache.catalina.users.MemoryUserDatabase.backgroundProcess Reloading memory user database [UserDatabase] from updated source [file:/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/conf/tomcat-users.xml]
+13-Oct-2026 15:32:02.044 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/ROOT.war]
+13-Oct-2026 15:32:02.384 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Oct-2026 15:32:02.389 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/ROOT.war] has finished in [345] ms
+13-Oct-2026 15:32:02.390 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/docs]
+13-Oct-2026 15:32:02.403 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/docs] has finished in [13] ms
+13-Oct-2026 15:32:02.404 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/manager]
+13-Oct-2026 15:32:02.421 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/manager] has finished in [18] ms
+13-Oct-2026 15:32:02.421 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/examples]
+13-Oct-2026 15:32:02.519 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/examples] has finished in [97] ms
+13-Oct-2026 15:32:02.519 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/host-manager]
+13-Oct-2026 15:32:02.531 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/host-manager] has finished in [11] ms
+13-Oct-2026 21:13:45.195 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+13-Oct-2026 21:13:45.205 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+13-Oct-2026 21:13:45.240 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread: 
+ java.base/java.io.UnixFileSystem.getBooleanAttributes0(Native Method)
+ java.base/java.io.UnixFileSystem.hasBooleanAttributes(UnixFileSystem.java:180)
+ java.base/java.io.File.exists(File.java:795)
+ org.apache.catalina.webresources.DirResourceSet.getResource(DirResourceSet.java:118)
+ org.apache.catalina.webresources.StandardRoot.getResourceInternal(StandardRoot.java:298)
+ org.apache.catalina.webresources.CachedResource.validateResource(CachedResource.java:130)
+ org.apache.catalina.webresources.Cache.getResource(Cache.java:115)
+ org.apache.catalina.webresources.StandardRoot.getResource(StandardRoot.java:230)
+ org.apache.catalina.webresources.StandardRoot.getClassLoaderResource(StandardRoot.java:239)
+ org.apache.catalina.loader.WebappClassLoaderBase.findResource(WebappClassLoaderBase.java:962)
+ org.apache.catalina.loader.WebappClassLoaderBase.getResource(WebappClassLoaderBase.java:1088)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.checkThreadContextClassLoader(AbandonedConnectionCleanupThread.java:116)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:83)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+ java.base/java.lang.Thread.run(Thread.java:1516)
+13-Oct-2026 21:13:45.266 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+13-Oct-2026 21:13:45.289 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

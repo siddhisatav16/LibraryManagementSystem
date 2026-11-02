@@ -1,0 +1,17 @@
+0:0:0:0:0:0:0:1 - - [02/Nov/2026:01:23:01 +0530] "GET / HTTP/1.1" 200 12186
+0:0:0:0:0:0:0:1 - - [02/Nov/2026:01:25:22 +0530] "GET /@vite/client HTTP/1.1" 404 768
+0:0:0:0:0:0:0:1 - - [02/Nov/2026:01:25:32 +0530] "GET /login.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [02/Nov/2026:01:25:32 +0530] "GET /images/indian_library_nature.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [02/Nov/2026:01:25:32 +0530] "GET /@vite/client HTTP/1.1" 404 768
+0:0:0:0:0:0:0:1 - - [02/Nov/2026:01:25:49 +0530] "GET /css/style.css HTTP/1.1" 200 19307
+0:0:0:0:0:0:0:1 - - [02/Nov/2026:01:25:49 +0530] "GET /images/indian_library_collection.png HTTP/1.1" 200 1062102
+0:0:0:0:0:0:0:1 - - [02/Nov/2026:01:25:49 +0530] "GET /images/indian_library_reading_room.png HTTP/1.1" 200 958765
+0:0:0:0:0:0:0:1 - - [02/Nov/2026:01:25:51 +0530] "GET /login.html HTTP/1.1" 200 2782
+0:0:0:0:0:0:0:1 - - [02/Nov/2026:01:25:52 +0530] "GET /images/indian_library_nature.png HTTP/1.1" 200 1083779
+0:0:0:0:0:0:0:1 - - [02/Nov/2026:01:26:19 +0530] "POST /LoginServlet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [02/Nov/2026:01:26:19 +0530] "GET /login.html?error=invalid_credentials HTTP/1.1" 200 2782
+0:0:0:0:0:0:0:1 - - [02/Nov/2026:01:26:46 +0530] "POST /LoginServlet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [02/Nov/2026:01:26:46 +0530] "GET /dashboard.html HTTP/1.1" 200 6293
+0:0:0:0:0:0:0:1 - - [02/Nov/2026:01:26:46 +0530] "GET /DashboardDataServlet HTTP/1.1" 200 377
+0:0:0:0:0:0:0:1 - - [02/Nov/2026:01:27:19 +0530] "GET /issuedbooklist.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [02/Nov/2026:01:27:19 +0530] "GET /IssuedBook HTTP/1.1" 200 165

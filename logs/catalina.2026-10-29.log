@@ -1,0 +1,147 @@
+29-Oct-2026 09:21:28.435 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Oct-2026 09:21:28.449 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+29-Oct-2026 09:21:28.496 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+29-Oct-2026 09:21:28.500 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread: 
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:391)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:123)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:201)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+ java.base/java.lang.Thread.run(Thread.java:1516)
+29-Oct-2026 09:21:28.573 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+29-Oct-2026 09:21:28.602 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+29-Oct-2026 09:49:08.970 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.61
+29-Oct-2026 09:49:08.972 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 6 2026 22:56:25 UTC
+29-Oct-2026 09:49:08.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.61.0
+29-Oct-2026 09:49:08.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+29-Oct-2026 09:49:08.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            26.0
+29-Oct-2026 09:49:08.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+29-Oct-2026 09:49:08.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-26.jdk/Contents/Home
+29-Oct-2026 09:49:08.973 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           26+35-2893
+29-Oct-2026 09:49:08.974 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+29-Oct-2026 09:49:08.974 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61
+29-Oct-2026 09:49:08.974 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61
+29-Oct-2026 09:49:09.116 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/conf/logging.properties
+29-Oct-2026 09:49:09.116 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Oct-2026 09:49:09.116 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+29-Oct-2026 09:49:09.116 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+29-Oct-2026 09:49:09.116 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+29-Oct-2026 09:49:09.116 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+29-Oct-2026 09:49:09.116 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+29-Oct-2026 09:49:09.116 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+29-Oct-2026 09:49:09.116 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+29-Oct-2026 09:49:09.116 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+29-Oct-2026 09:49:09.117 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+29-Oct-2026 09:49:09.117 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+29-Oct-2026 09:49:09.117 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61
+29-Oct-2026 09:49:09.117 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61
+29-Oct-2026 09:49:09.117 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/temp
+29-Oct-2026 09:49:09.358 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/vedantsuryawanshi/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+29-Oct-2026 09:49:09.654 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+29-Oct-2026 09:49:09.754 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [971] milliseconds
+29-Oct-2026 09:49:09.793 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+29-Oct-2026 09:49:09.793 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.61]
+29-Oct-2026 09:49:09.823 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/ROOT.war]
+29-Oct-2026 09:49:10.863 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Oct-2026 09:49:10.926 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/ROOT.war] has finished in [1,098] ms
+29-Oct-2026 09:49:10.927 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/docs]
+29-Oct-2026 09:49:10.967 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/docs] has finished in [39] ms
+29-Oct-2026 09:49:10.967 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/manager]
+29-Oct-2026 09:49:11.034 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/manager] has finished in [67] ms
+29-Oct-2026 09:49:11.034 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/examples]
+29-Oct-2026 09:49:11.567 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/examples] has finished in [532] ms
+29-Oct-2026 09:49:11.567 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/host-manager]
+29-Oct-2026 09:49:11.606 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/host-manager] has finished in [39] ms
+29-Oct-2026 09:49:11.613 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+29-Oct-2026 09:49:11.629 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1873] milliseconds
+29-Oct-2026 09:49:39.873 INFO [http-nio-8080-exec-4] org.apache.tomcat.util.http.parser.Cookie.logInvalidHeader A cookie header was received [save 0={"component7":{"type":"OR","x":4429.136384671224,"y":4195.7272826189055,"rotation":0,"inputs":{"input1":{"state":0,"from":[{"component":"component8","pin":"output1"}]},"input2":{"state":0,"from":[{"component":"component8","pin":"output1"}]}},"outputs":{"output1":{"state":0,"to":[{"component":"component12","pin":"input1"}]}}},"component8":{"type":"NAND","x":4367.5,"y":4009,"rotation":0,"inputs":{"input1":{"state":1,"from":[{"component":"component9","pin":"output"}]},"input2":{"state":1,"from":[{"component":"component9","pin":"output"}]}},"outputs":{"output1":{"state":0,"to":[{"component":"component7","pin":"input2"},{"component":"component7","pin":"input1"}]}}},"component9":{"type":"SWITCH","x":4188.571420944449,"y":4008.571427225491,"rotation":0,"inputs":{},"outputs":{"output":{"state":1,"to":[{"component":"component8","pin":"input1"},{"component":"component8","pin":"input2"}]}}},"component12":{"type":"NOT","x":4508.166666666666,"y":3975.6666666666665,"rotation":0,"inputs":{"input1":{"state":0,"from":[{"component":"component7","pin":"output1"}]}},"outputs":{"output1":{"state":1,"to":[{"component":"component13","pin":"input"}]}}},"component13":{"type":"LIGHT","x":4654.545484947085,"y":3954.545453859096,"rotation":0,"inputs":{"input":{"state":1,"from":[{"component":"component12","pin":"output1"}]}},"outputs":{}}}] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+29-Oct-2026 10:45:31.810 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+29-Oct-2026 10:45:31.818 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Oct-2026 10:45:31.820 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+29-Oct-2026 10:45:31.833 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+29-Oct-2026 10:45:31.835 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread: 
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:391)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:123)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:201)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+ java.base/java.lang.Thread.run(Thread.java:1516)
+29-Oct-2026 10:45:31.835 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [Timer-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread: 
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:391)
+ java.base/java.lang.Object.wait(Object.java:353)
+ java.base/java.util.TimerThread.mainLoop(Timer.java:543)
+ java.base/java.util.TimerThread.run(Timer.java:522)
+29-Oct-2026 10:45:31.855 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+29-Oct-2026 10:45:31.868 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+29-Oct-2026 10:54:37.698 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.61
+29-Oct-2026 10:54:37.701 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 6 2026 22:56:25 UTC
+29-Oct-2026 10:54:37.701 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.61.0
+29-Oct-2026 10:54:37.701 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+29-Oct-2026 10:54:37.701 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            26.0
+29-Oct-2026 10:54:37.701 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          aarch64
+29-Oct-2026 10:54:37.701 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk-26.jdk/Contents/Home
+29-Oct-2026 10:54:37.701 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           26+35-2893
+29-Oct-2026 10:54:37.701 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+29-Oct-2026 10:54:37.702 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61
+29-Oct-2026 10:54:37.702 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61
+29-Oct-2026 10:54:37.806 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/conf/logging.properties
+29-Oct-2026 10:54:37.807 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+29-Oct-2026 10:54:37.807 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+29-Oct-2026 10:54:37.807 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+29-Oct-2026 10:54:37.807 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dsun.io.useCanonCaches=false
+29-Oct-2026 10:54:37.807 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+29-Oct-2026 10:54:37.807 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+29-Oct-2026 10:54:37.807 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+29-Oct-2026 10:54:37.807 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+29-Oct-2026 10:54:37.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+29-Oct-2026 10:54:37.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+29-Oct-2026 10:54:37.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+29-Oct-2026 10:54:37.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61
+29-Oct-2026 10:54:37.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61
+29-Oct-2026 10:54:37.808 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/temp
+29-Oct-2026 10:54:38.137 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/vedantsuryawanshi/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+29-Oct-2026 10:54:38.434 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+29-Oct-2026 10:54:38.507 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [991] milliseconds
+29-Oct-2026 10:54:38.545 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+29-Oct-2026 10:54:38.545 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.61]
+29-Oct-2026 10:54:38.572 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/ROOT.war]
+29-Oct-2026 10:54:39.320 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+29-Oct-2026 10:54:39.366 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/ROOT.war] has finished in [792] ms
+29-Oct-2026 10:54:39.367 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/docs]
+29-Oct-2026 10:54:39.398 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/docs] has finished in [30] ms
+29-Oct-2026 10:54:39.398 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/manager]
+29-Oct-2026 10:54:39.433 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/manager] has finished in [35] ms
+29-Oct-2026 10:54:39.433 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/examples]
+29-Oct-2026 10:54:39.727 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/examples] has finished in [294] ms
+29-Oct-2026 10:54:39.727 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/host-manager]
+29-Oct-2026 10:54:39.752 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/vedantsuryawanshi/Downloads/LibraryManagementSystem-main/runtime/apache-tomcat-10.1.61/webapps/host-manager] has finished in [25] ms
+29-Oct-2026 10:54:39.755 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+29-Oct-2026 10:54:39.764 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1254] milliseconds
+29-Oct-2026 10:54:56.382 INFO [http-nio-8080-exec-3] org.apache.tomcat.util.http.parser.Cookie.logInvalidHeader A cookie header was received [save 0={"component7":{"type":"OR","x":4429.136384671224,"y":4195.7272826189055,"rotation":0,"inputs":{"input1":{"state":0,"from":[{"component":"component8","pin":"output1"}]},"input2":{"state":0,"from":[{"component":"component8","pin":"output1"}]}},"outputs":{"output1":{"state":0,"to":[{"component":"component12","pin":"input1"}]}}},"component8":{"type":"NAND","x":4367.5,"y":4009,"rotation":0,"inputs":{"input1":{"state":1,"from":[{"component":"component9","pin":"output"}]},"input2":{"state":1,"from":[{"component":"component9","pin":"output"}]}},"outputs":{"output1":{"state":0,"to":[{"component":"component7","pin":"input2"},{"component":"component7","pin":"input1"}]}}},"component9":{"type":"SWITCH","x":4188.571420944449,"y":4008.571427225491,"rotation":0,"inputs":{},"outputs":{"output":{"state":1,"to":[{"component":"component8","pin":"input1"},{"component":"component8","pin":"input2"}]}}},"component12":{"type":"NOT","x":4508.166666666666,"y":3975.6666666666665,"rotation":0,"inputs":{"input1":{"state":0,"from":[{"component":"component7","pin":"output1"}]}},"outputs":{"output1":{"state":1,"to":[{"component":"component13","pin":"input"}]}}},"component13":{"type":"LIGHT","x":4654.545484947085,"y":3954.545453859096,"rotation":0,"inputs":{"input":{"state":1,"from":[{"component":"component12","pin":"output1"}]}},"outputs":{}}}] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+29-Oct-2026 23:28:18.508 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+29-Oct-2026 23:28:18.521 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+29-Oct-2026 23:28:18.568 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [ROOT] registered the JDBC driver [com.mysql.cj.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+29-Oct-2026 23:28:18.570 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [mysql-cj-abandoned-connection-cleanup] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread: 
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:391)
+ java.base/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:123)
+ java.base/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:201)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:84)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+ java.base/java.lang.Thread.run(Thread.java:1516)
+29-Oct-2026 23:28:18.571 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads The web application [ROOT] appears to have started a thread named [Timer-0] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread: 
+ java.base/java.lang.Object.wait0(Native Method)
+ java.base/java.lang.Object.wait(Object.java:391)
+ java.base/java.lang.Object.wait(Object.java:353)
+ java.base/java.util.TimerThread.mainLoop(Timer.java:543)
+ java.base/java.util.TimerThread.run(Timer.java:522)
+29-Oct-2026 23:28:18.641 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+29-Oct-2026 23:28:18.659 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
