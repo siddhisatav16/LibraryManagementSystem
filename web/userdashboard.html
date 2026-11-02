@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - LibraryOS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>localStorage.setItem('userRole', 'user');</script>
+</head>
+<body>
+    <div class="blob-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Top Navbar -->
+    <nav class="top-navbar">
+        <div class="nav-container container">
+            <a href="userdashboard.html" class="nav-logo">
+                <i class="fas fa-layer-group"></i> LibraryOS
+            </a>
+            <div class="nav-links">
+                <a href="userdashboard.html" class="nav-link active"><i class="fas fa-home"></i> Home</a>
+                <a href="booklist.html" class="nav-link"><i class="fas fa-book"></i> View Books</a>
+                <a href="userissuebook.html" class="nav-link"><i class="fas fa-book-open"></i> Issue Book</a>
+                <a href="ReturnBookServlet" class="nav-link"><i class="fas fa-undo"></i> Return Book</a>
+                <a href="issuedbooklist.html" class="nav-link"><i class="fas fa-list"></i> My Issued Books</a>
+                <a href="LogoutServlet" class="lib-btn lib-btn-secondary nav-logout">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content container">
+
+        <!-- HERO BANNER -->
+        <div class="hero-banner">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome Back, Scholar</h1>
+                <p class="hero-subtitle">Your gateway to thousands of physical and digital resources. Explore our curated collections, manage your issued books, and access premium study zones.</p>
+                
+                <div class="quick-actions-bar">
+                    <a href="booklist.html" class="qa-btn qa-btn-primary"><i class="fas fa-search"></i> Explore Catalog</a>
+                    <a href="userissuebook.html" class="qa-btn qa-btn-secondary"><i class="fas fa-book-open"></i> Issue a Book</a>
+                    <a href="ReturnBookServlet" class="qa-btn qa-btn-secondary"><i class="fas fa-undo"></i> Return Book</a>
+                    <a href="issuedbooklist.html" class="qa-btn qa-btn-secondary"><i class="fas fa-list"></i> My Books</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- USER STATS OVERVIEW -->
+        <h2 class="text-section mb-2"><i class="fas fa-chart-pie"></i> My Activity Overview</h2>
+        <div class="stats-grid">
+            <div class="lib-card">
+                <div class="stat-orb orb-green">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h3 class="stat-value">2</h3>
+                <p class="stat-label">Currently Borrowed</p>
+            </div>
+            <div class="lib-card">
+                <div class="stat-orb orb-orange">
+                    <i class="fas fa-history"></i>
+                </div>
+                <h3 class="stat-value">14</h3>
+                <p class="stat-label">Total Books Read</p>
+            </div>
+            <div class="lib-card">
+                <div class="stat-orb orb-yellow">
+                    <i class="fas fa-rupee-sign"></i>
+                </div>
+                <h3 class="stat-value">₹0</h3>
+                <p class="stat-label">Pending Fines</p>
+            </div>
+            <div class="lib-card">
+                <div class="stat-orb orb-red">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <h3 class="stat-value">0</h3>
+                <p class="stat-label">Overdue Books</p>
+            </div>
+        </div>
+
+        <!-- DASHBOARD SPLIT -->
+        <div class="dashboard-split">
+            <!-- ISSUED BOOKS LIST -->
+            <div>
+                <div class="flex-between mb-1">
+                    <h2 class="text-section m-0"><i class="fas fa-book-reader"></i> Active Borrowings</h2>
+                    <a href="issuedbooklist.html" class="lib-btn lib-btn-secondary h-32 px-3 fs-sm">View History</a>
+                </div>
+                
+                <div class="lib-card p-0 overflow-hidden">
+                    <div class="lib-table-container m-0 br-none bs-none">
+                        <table class="lib-table m-0">
+                            <thead class="bg-canvas">
+                                <tr>
+                                    <th>Book Detail</th>
+                                    <th>Issue Date</th>
+                                    <th>Return By</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="px-4">
+                                        <div class="flex gap-1">
+                                            <div class="book-cover-sm" style="background: linear-gradient(135deg, #064E3B, #047857);">
+                                                <i class="fas fa-leaf" style="opacity: 0.3;"></i>
+                                            </div>
+                                            <div>
+                                                <div class="font-black fs-md mb-0">The Ancient Gardens</div>
+                                                <div class="fs-sm text-muted">BK-1042</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">Oct 12, 2026</td>
+                                    <td class="font-black">Oct 26, 2026</td>
+                                    <td><span class="badge badge-active">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4">
+                                        <div class="flex gap-1">
+                                            <div class="book-cover-sm" style="background: linear-gradient(135deg, #C2410C, #9A3412);">
+                                                <i class="fas fa-sun" style="opacity: 0.3;"></i>
+                                            </div>
+                                            <div>
+                                                <div class="font-black fs-md mb-0">Saffron Echoes</div>
+                                                <div class="fs-sm text-muted">BK-2105</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="font-bold">Oct 05, 2026</td>
+                                    <td class="font-black">Oct 19, 2026</td>
+                                    <td><span class="badge badge-due">Due Soon</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RECOMMENDATIONS VERTICAL -->
+            <div>
+                <h2 class="text-section mb-1"><i class="fas fa-star"></i> Top Picks</h2>
+                
+                <div class="lib-card flex-column gap-1">
+                    
+                    <div class="flex gap-2 pb-0" style="border-bottom: 1px solid rgba(0,0,0,0.05);">
+                        <div class="book-cover-md" style="background: linear-gradient(135deg, #B45309, #92400E);">
+                            <i class="fas fa-monument" style="opacity: 0.4; font-size: 1.5rem;"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-black mb-0 fs-md">Golden Temples</h4>
+                            <p class="text-muted fs-sm mb-0">Architecture</p>
+                            <a href="userissuebook.html" class="link-primary fs-sm" style="text-transform: uppercase;"><i class="fas fa-plus"></i> Issue</a>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <div class="book-cover-md" style="background: linear-gradient(135deg, #1C1917, #292524);">
+                            <i class="fas fa-moon" style="opacity: 0.4; font-size: 1.5rem;"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-black mb-0 fs-md">Midnight Tales</h4>
+                            <p class="text-muted fs-sm mb-0">Fiction</p>
+                            <a href="userissuebook.html" class="link-primary fs-sm" style="text-transform: uppercase;"><i class="fas fa-plus"></i> Issue</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- EXPLORE ZONES -->
+        <h2 class="text-section mb-2"><i class="fas fa-compass"></i> Explore Library Zones</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-img-wrapper">
+                    <img src="images/indian_library_about.png" alt="Quiet Reading Zone" class="feature-img">
+                </div>
+                <div class="feature-content">
+                    <h3 class="feature-title">Quiet Reading Zone</h3>
+                    <p class="feature-desc">Experience absolute tranquility in our dedicated reading areas. Equipped with beautifully carved wooden desks and warm lighting for long, peaceful study sessions.</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-img-wrapper">
+                    <img src="images/indian_library_collection.png" alt="Rare Archives" class="feature-img">
+                </div>
+                <div class="feature-content">
+                    <h3 class="feature-title">Rare Archives</h3>
+                    <p class="feature-desc">Access glowing, ancient manuscripts and rare literary artifacts perfectly preserved in our terracotta-floored vaults. Ideal for deep historical research.</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-img-wrapper">
+                    <img src="images/indian_library_reading_room.png" alt="Collaborative Halls" class="feature-img">
+                </div>
+                <div class="feature-content">
+                    <h3 class="feature-title">Collaborative Halls</h3>
+                    <p class="feature-desc">Majestic, sunlit halls designed for group study and collaborative projects. The vast, breathtaking architecture fosters boundless creativity and discussion.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- RULES & INSTRUCTIONS -->
+        <h2 class="text-section mb-2"><i class="fas fa-clipboard-list"></i> Rules & Instructions</h2>
+        <div class="grid-bento mb-4">
+            <div class="lib-card">
+                <div class="stat-orb orb-red mb-1">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3 class="text-card-title mb-0">Return On Time</h3>
+                <p class="text-muted">All books are issued for a maximum of 14 days. A daily penalty is automatically applied for late returns according to the active library rate.</p>
+            </div>
+            
+            <div class="lib-card">
+                <div class="stat-orb orb-green mb-1">
+                    <i class="fas fa-book-reader"></i>
+                </div>
+                <h3 class="text-card-title mb-0">Handle With Care</h3>
+                <p class="text-muted">Keep books in excellent condition. Do not fold pages, highlight text, or write inside. Damaged books will require full replacement cost.</p>
+            </div>
+            
+            <div class="lib-card">
+                <div class="stat-orb orb-orange mb-1">
+                    <i class="fas fa-layer-group"></i>
+                </div>
+                <h3 class="text-card-title mb-0">Issue Limits</h3>
+                <p class="text-muted">Standard members can issue up to 3 books simultaneously. Please return a book before attempting to issue a new one to keep the system balanced.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
