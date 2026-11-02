@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Books - LibraryOS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="blob-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Top Navbar -->
+    <nav class="top-navbar">
+        <div class="nav-container container">
+            <a href="dashboard.html" class="nav-logo">
+                <i class="fas fa-layer-group"></i> LibraryOS
+            </a>
+            <div class="nav-links" id="navLinks">
+                <!-- Links will be injected by script.js based on role -->
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 4rem; margin-bottom: 4rem;">
+        <div class="lib-card">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                <h3 class="text-card-title"><i class="fas fa-book" style="color: var(--accent-tertiary);"></i> All Books <span id="bookCount" style="opacity: 0.6; font-size: 1rem;"></span></h3>
+                <div id="adminActions" style="display: none;">
+                    <a href="bookadd.html" class="lib-btn lib-btn-primary" style="height: 40px; font-size: 0.9rem; padding: 0 1rem;"><i class="fas fa-plus" style="margin-right: 8px;"></i> Add Book</a>
+                </div>
+            </div>
+
+            <div class="lib-table-container">
+                <table class="lib-table">
+                    <thead>
+                        <tr>
+                            <th>Book Details</th>
+                            <th>Category</th>
+                            <th>Availability</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="booksTableBody">
+                        <tr><td colspan="4" style="text-align: center; padding: 3rem; color: var(--text-muted);"><i class="fas fa-spinner fa-spin"></i> Loading Books...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

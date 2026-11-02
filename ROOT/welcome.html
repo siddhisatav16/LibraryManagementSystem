@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LibraryOS - Premium Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .hero-section {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-image: url('images/landing_banner.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            margin-top: -100px; /* pull up behind navbar */
+            padding-top: 100px;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero-content h1 {
+            color: white;
+            font-size: 5rem;
+            font-family: 'Dancing Script', cursive;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+            margin: 0;
+            line-height: 1.1;
+            letter-spacing: 2px;
+        }
+
+        .hero-content p {
+            color: #f8fafc;
+            font-size: 1.25rem;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.9);
+            font-weight: 500;
+            line-height: 1.6;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .nav-buttons .lib-btn {
+            height: 54px;
+            padding: 0 2.5rem;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .hero-btn-primary {
+            background: #34D399;
+            color: #064e3b;
+            box-shadow: none;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+
+        .hero-btn-primary:hover {
+            background: #10B981;
+            transform: translateY(-2px);
+        }
+
+        .hero-btn-secondary {
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            border: 2px solid white;
+            box-shadow: none;
+            backdrop-filter: blur(8px);
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+
+        .hero-btn-secondary:hover {
+            background: white;
+            color: #111827;
+            transform: translateY(-2px);
+        }
+        
+        /* Specific blobs for home */
+        .home-blob-1 { width: 50vw; height: 50vw; background: var(--accent-primary); top: -20%; right: -10%; }
+        .home-blob-2 { width: 40vw; height: 40vw; background: var(--accent-secondary); bottom: -10%; left: -10%; }
+
+        .section-split {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        @media (min-width: 768px) {
+            .section-split {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="blob-container">
+        <div class="blob home-blob-1" style="animation: lib-float 10s infinite ease-in-out;"></div>
+        <div class="blob home-blob-2" style="animation: lib-float-delayed 12s infinite ease-in-out;"></div>
+    </div>
+
+    <!-- Top Navbar -->
+    <nav class="top-navbar" style="position: sticky; z-index: 100; top: 20px;">
+        <div class="nav-container container" style="background: rgba(255, 255, 255, 0.85);">
+            <a href="welcome.html" class="nav-logo">
+                <i class="fas fa-layer-group"></i> LibraryOS
+            </a>
+            <div class="nav-links">
+                <a href="welcome.html" class="nav-link active">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="login.html" class="lib-btn lib-btn-primary" style="height: 44px; padding: 0 1.5rem; font-size: 1rem; border-radius: 8px; box-shadow: none;">Log In</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Full Width) -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Discover Knowledge</h1>
+            <p>
+                Experience a premium library management system beautifully infused with the serene, natural aesthetics of ancient Indian architecture and lush, sunlit landscapes.
+            </p>
+            <div class="nav-buttons">
+                <a href="login.html" class="lib-btn hero-btn-primary">
+                    Get Started
+                </a>
+                <a href="register.html" class="lib-btn hero-btn-secondary">
+                    Create Account
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        
+        <!-- About Section -->
+        <section id="about" style="padding: 6rem 0 2rem 0;">
+            <div class="section-split">
+                <div class="lib-card" style="padding: 1rem;">
+                    <img src="images/indian_library_about.png" alt="Library Heritage" style="width: 100%; border-radius: 20px; object-fit: cover; height: 400px;">
+                </div>
+                <div>
+                    <h2 class="text-section" style="margin-bottom: 1.5rem; font-family: 'Dancing Script', cursive; font-size: 3.5rem; color: var(--accent-primary);">Our Heritage</h2>
+                    <p class="text-muted" style="font-size: 1.1rem; margin-bottom: 1rem;">
+                        Step into a sanctuary where ancient wisdom meets modern convenience. Our library is designed to bring you the peace and tranquility of traditional Indian reading halls, adorned with carved wood and sunlight filtering through vibrant green leaves.
+                    </p>
+                    <p class="text-muted" style="font-size: 1.1rem;">
+                        Whether you are a researcher delving into rare manuscripts or a casual reader finding solace, LibraryOS ensures your experience is perfectly seamless and magically inspired.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collections Section -->
+        <section id="collections" style="padding: 4rem 0;">
+            <div class="section-split" style="direction: rtl;">
+                <div class="lib-card" style="padding: 1rem; direction: ltr;">
+                    <img src="images/indian_library_collection.png" alt="Rare Collections" style="width: 100%; border-radius: 20px; object-fit: cover; height: 400px;">
+                </div>
+                <div style="direction: ltr;">
+                    <h2 class="text-section" style="margin-bottom: 1.5rem; font-family: 'Dancing Script', cursive; font-size: 3.5rem; color: var(--accent-secondary);">Rare Collections</h2>
+                    <p class="text-muted" style="font-size: 1.1rem; margin-bottom: 1rem;">
+                        Walk down aisles filled with glowing, magical literature. Our expansive collection ranges from ancient texts to contemporary masterpieces.
+                    </p>
+                    <p class="text-muted" style="font-size: 1.1rem;">
+                        Discover books bound in leather, smell the scent of old paper, and immerse yourself in the rich tapestry of stories that have shaped civilizations.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section id="features" style="padding: 4rem 0 8rem 0;">
+            <h2 class="text-section" style="text-align: center; margin-bottom: 3rem;">Premium Features</h2>
+            <div class="grid-bento">
+                <div class="lib-card">
+                    <div class="stat-orb" style="background: linear-gradient(to bottom right, #C2410C, #9A3412);">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="text-card-title" style="margin-bottom: 1rem;">Inventory Mastery</h3>
+                    <p class="text-muted">Effortlessly add, update, and organize thousands of books with our intuitive, squishy UI.</p>
+                </div>
+                
+                <div class="lib-card">
+                    <div class="stat-orb" style="background: linear-gradient(to bottom right, #059669, #064E3B);">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-card-title" style="margin-bottom: 1rem;">Member Portal</h3>
+                    <p class="text-muted">Register and manage users in seconds. Our system is built for speed and visual clarity.</p>
+                </div>
+                
+                <div class="lib-card">
+                    <div class="stat-orb" style="background: linear-gradient(to bottom right, #D97706, #B45309);">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3 class="text-card-title" style="margin-bottom: 1rem;">Seamless Circulation</h3>
+                    <p class="text-muted">Issue and return books with satisfying animations and zero-friction processes.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Call to Action Banner -->
+    <section style="background-image: url('images/indian_library_reading_room.png'); background-size: cover; background-position: center; padding: 6rem 2rem; position: relative; text-align: center;">
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(6, 78, 59, 0.7);"></div>
+        <div style="position: relative; z-index: 10; max-width: 600px; margin: 0 auto; color: white;">
+            <h2 style="font-family: 'Dancing Script', cursive; font-size: 4rem; margin-bottom: 1rem; text-shadow: 2px 2px 8px rgba(0,0,0,0.5);">Join Our Sanctuary</h2>
+            <p style="font-size: 1.25rem; margin-bottom: 2rem; text-shadow: 1px 1px 4px rgba(0,0,0,0.5);">
+                Become a member today to access our vast collection and experience the serenity of our reading halls.
+            </p>
+            <a href="register.html" class="lib-btn hero-btn-primary" style="height: 54px; padding: 0 3rem; font-size: 1.1rem; border-radius: 8px;">
+                Become a Member
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--text-primary); color: white; padding: 4rem 2rem 2rem 2rem; text-align: center;">
+        <div class="container" style="display: flex; flex-direction: column; align-items: center; gap: 2rem;">
+            <a href="welcome.html" style="font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 1.5rem; color: var(--accent-primary); text-decoration: none;">
+                <i class="fas fa-layer-group"></i> LibraryOS
+            </a>
+            <p style="color: #A8A29E; max-width: 400px;">
+                Preserving ancient wisdom through modern technology.
+            </p>
+            <div style="display: flex; gap: 1.5rem; font-size: 1.5rem;">
+                <a href="#" style="color: white; opacity: 0.8; transition: 0.3s;"><i class="fab fa-twitter"></i></a>
+                <a href="#" style="color: white; opacity: 0.8; transition: 0.3s;"><i class="fab fa-instagram"></i></a>
+                <a href="#" style="color: white; opacity: 0.8; transition: 0.3s;"><i class="fab fa-facebook"></i></a>
+            </div>
+            <div style="width: 100%; height: 1px; background: rgba(255,255,255,0.1); margin-top: 1rem;"></div>
+            <p style="color: #A8A29E; font-size: 0.9rem;">&copy; 2026 LibraryOS. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
